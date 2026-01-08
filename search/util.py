@@ -32,15 +32,6 @@ def sanitize_filename(filename: str) -> str:
     return filename
 
 def remove_think(response):
-    '''
-    Qwen의 답변에서 think태그를 달고 생각하는 내용 출력해주는 부분을 삭제하기 위한 함수
-
-    Args:
-        response : Qwen의 답변
-    
-    Returns:
-        think태그 부분이 삭제된 Qwen의 답변
-    '''
 
     if "<think>" in response and "</think>" in response:
         try:

@@ -59,7 +59,6 @@ class AnswerGenerator:
             
             # Engine 클래스를 사용하여 모델 초기화
             # mem_fraction_static: SGLang이 사용할 GPU 메모리 비율
-            # Qwen3-4B 모델은 약 8GB 필요, 0.2 = 20% 정도면 충분
             try:
                 self.engine = sgl.Engine(
                     model_path=self.model_name,

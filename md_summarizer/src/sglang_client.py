@@ -1,5 +1,5 @@
 """
-SGLang Client for Qwen Model
+SGLang Client
 기존 AnswerGenerator와 동일한 인터페이스 제공
 """
 

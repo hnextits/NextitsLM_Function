@@ -47,7 +47,7 @@ class SearchResponse(BaseModel):
 # FastAPI 앱 초기화
 app = FastAPI(
     title="MD Summarizer API",
-    description="SGLang + Qwen 기반 문서 요약 시스템",
+    description="SGLang + LLM 기반 문서 요약 시스템",
     version="1.0.0"
 )
 
