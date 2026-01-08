@@ -1,0 +1,45 @@
+# Model Configuration for MD Summarizer
+
+# SGLang Server Configuration
+sglang:
+  # Model settings
+  model_path: "Model Name"
+  
+  # Server settings
+  servers:
+    - host: "0.0.0.0"
+      port: 
+      gpu_id: 0
+    - host: "0.0.0.0"
+      port: 
+      gpu_id: 1
+  
+  # Performance settings
+  tp_size:   # Tensor parallelism (1 for single GPU per instance)
+  mem_fraction_static:   # GPU memory fraction for KV cache
+  
+  # Generation settings
+  max_new_tokens: 
+  temperature: 
+  top_p: 
+  repetition_penalty: 
+  
+# Summarization settings
+summarization:
+  # Chunking settings
+  chunk_size:   # Same as original system
+  chunk_overlap: 
+  
+  # Summary settings
+  max_summary_tokens: 
+  min_summary_length:   # lines
+  
+  # Index settings
+  enable_indexing: true
+  index_batch_size: 
+
+# System settings
+system:
+  device: "cuda"
+  log_level: "INFO"
+  timeout: 30
