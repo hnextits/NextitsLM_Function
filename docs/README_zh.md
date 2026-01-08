@@ -161,8 +161,8 @@ skill/
 ```yaml
 model:
   name: "Model"
-  max_tokens: 4096
-  temperature: 0.7
+  max_tokens: 
+  temperature: 
 
 server:
   host: "0.0.0.0"

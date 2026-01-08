@@ -20,7 +20,7 @@ def example_1_basic_summarization():
     print("=" * 60)
     
     # SGLang 클라이언트 생성 (기존 AnswerGenerator 대체)
-    client = SGLangClient(endpoints=["http://localhost:30000", "http://localhost:30001"])
+    client = SGLangClient(endpoints=["http://localhost:port", "http://localhost:port"])
     
     # 샘플 텍스트
     sample_text = """
